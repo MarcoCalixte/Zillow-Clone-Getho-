@@ -108,6 +108,7 @@ button.search-icon-2 .fa-searchengin {
 }
 
 div.sticky {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     right: 5em;
@@ -453,6 +454,8 @@ div.form-control-one {
     width: 84%;
     padding-top: 1.5em;
     overflow: hidden;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
     max-height: fit-content;
     /* border: 1px solid red; */
 }
@@ -695,6 +698,7 @@ header {
 .header__nav {
     border-bottom: 1px solid red;
     display: grid;
+    grid-template-columns: 1fr -webkit-min-content 1fr;
     grid-template-columns: 1fr min-content 1fr;
     justify-items: center;
     align-items: center;
@@ -715,7 +719,8 @@ ul.left-anchor-container {
     font-family: var(--header-navigation-fonts);
     display: grid;
     grid-auto-flow: column;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     list-style-type: none;
     justify-items: center;
     align-items: center;
@@ -737,6 +742,7 @@ ul.left-anchor-container .left-anchorItems {
 ul.left-anchor-container span.dropdown-content {
     display: grid;
     grid-auto-flow: row dense;
+    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
     justify-content: center;
     align-content: center;
@@ -904,6 +910,7 @@ div.resources-container a:hover {
 ul.left-anchor-container span.dropdown-content-2 {
     display: grid;
     grid-auto-flow: row dense;
+    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
     justify-content: center;
     align-content: center;
@@ -1044,6 +1051,7 @@ ul.left-anchor-container span.dropdown-content-3 {
     /* border: 2px solid red; */
     display: grid;
     grid-auto-flow: row dense;
+    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
     justify-content: center;
     align-content: center;
@@ -1192,6 +1200,7 @@ ul.left-anchor-container span.dropdown-content-4 {
     grid-auto-flow: row dense;
     justify-content: center;
     align-content: center;
+    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
     background-color: white;
     padding-top: 2em;
@@ -1338,6 +1347,7 @@ ul.left-anchor-container span.dropdown-content-5 {
     grid-auto-flow: row dense;
     justify-content: center;
     align-content: center;
+    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
     background-color: white;
     padding-top: 2em;
@@ -1497,6 +1507,8 @@ div.nav-logo-container {
 div.nav-logo-container img.logo-icon {
     width: 140%;
     height: 3.5ch;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
     max-height: fit-content;
     margin-right: 1ch;
 }
@@ -1517,7 +1529,8 @@ ul.manage-rentals-container {
     /* border: 2px solid red; */
     display: grid;
     grid-auto-flow: column;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     justify-items: center;
     align-items: center;
     font-size: normal;
@@ -1660,9 +1673,10 @@ input.search-input {
     border-radius: 0.3rem;
     margin-top: 1em;
     margin-bottom: 1em;
-    padding-top: 1.3em;
+    padding-top: 1.6em;
     padding-bottom: 1.5em;
     padding-left: 2em;
+
     font-size: 1.2rem;
     caret-color: var(--body-color);
     color: var(--regular-black);
@@ -1689,6 +1703,8 @@ main.mainContent button.search-icon {
     width: 4ch;
     padding-top: 1.1em;
     padding-bottom: 1em;
+    -webkit-margin-start: -84px;
+    -webkit-margin-before: 3px;
     border-radius: 0.3rem;
     transform: translate(30.1em, -4.3em);
     background-color: transparent;
@@ -1710,7 +1726,8 @@ main.mainContent button.search-icon .fa-search {
 section.post-card-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-    column-gap: 2ch;
+    -moz-column-gap: 2ch;
+         column-gap: 2ch;
     padding: 5em;
     justify-items: center;
     align-items: center;
@@ -1735,7 +1752,10 @@ article.post-card {
     padding-top: 1ch;
     padding-bottom: 5ch;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     background-color: white;
     width: 100%;
 }
@@ -1806,6 +1826,7 @@ article.post-card:hover button.card-button {
 .search-states__ul {
     /* border: 1px solid firebrick; */
     display: grid;
+    grid-auto-columns: -webkit-max-content;
     grid-auto-columns: max-content;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
