@@ -1,0 +1,23 @@
+{
+  "name": "zillow-clone-getho-second-copy",
+  "version": "1.0.0",
+  "description": "zillow clone",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoCalixte/Zillow-Clone-Getho-.git"
+  },
+  "keywords": [
+    "zillow",
+    "getho"
+  ],
+  "author": "Marco Calixte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoCalixte/Zillow-Clone-Getho-/issues"
+  },
+  "homepage": "https://github.com/MarcoCalixte/Zillow-Clone-Getho-#readme"
+}

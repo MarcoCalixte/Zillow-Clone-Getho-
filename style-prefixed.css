@@ -40,7 +40,7 @@
 
 
 div.search-box-container-2 {
-    grid-row: 2 / 4;
+    grid-row: 2 / 4 ;
     grid-column: 2 / 4;
     /* border: 2px solid red; */
 }
@@ -48,7 +48,7 @@ div.search-box-container-2 {
 
 div.search-box-container-2 {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -88,12 +88,10 @@ input.search-input-2:focus {
 
 button.search-icon-2 {
     margin: 0 auto;
-    padding-bottom: 0.3em;
     font-size: 1.5rem;
     width: 4ch;
     line-height: 6vh;
     border-radius: 0.3rem;
-    -webkit-margin-start: -82px;
     transform: translate(30.1em, -2em);
     background-color: transparent;
     cursor: pointer;
@@ -456,8 +454,8 @@ div.form-control-one {
     width: 84%;
     padding-top: 1.5em;
     overflow: hidden;
-    max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
+    max-height: -webkit-fit-content;
     max-height: fit-content;
     /* border: 1px solid red; */
 }
@@ -722,7 +720,7 @@ ul.left-anchor-container {
     display: grid;
     grid-auto-flow: column;
     -moz-column-gap: 2rem;
-    column-gap: 2rem;
+         column-gap: 2rem;
     list-style-type: none;
     justify-items: center;
     align-items: center;
@@ -1509,8 +1507,8 @@ div.nav-logo-container {
 div.nav-logo-container img.logo-icon {
     width: 140%;
     height: 3.5ch;
-    max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
+    max-height: -webkit-fit-content;
     max-height: fit-content;
     margin-right: 1ch;
 }
@@ -1525,7 +1523,6 @@ div.nav-logo-container h1.nav-title a {
 div.nav-logo-container span.nav-title-trademark {
     color: var(--body-color);
 }
-
 /* div.nav-logo-container */
 
 ul.manage-rentals-container {
@@ -1533,7 +1530,7 @@ ul.manage-rentals-container {
     display: grid;
     grid-auto-flow: column;
     -moz-column-gap: 2rem;
-    column-gap: 2rem;
+         column-gap: 2rem;
     justify-items: center;
     align-items: center;
     font-size: normal;
@@ -1632,7 +1629,6 @@ ul.learn-more-list li:hover {
     color: var(--regular-black);
     text-decoration: underline;
 }
-
 /*  Navigation Bar */
 
 main.mainContent {
@@ -1731,7 +1727,7 @@ section.post-card-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
     -moz-column-gap: 2ch;
-    column-gap: 2ch;
+         column-gap: 2ch;
     padding: 5em;
     justify-items: center;
     align-items: center;
@@ -1757,9 +1753,9 @@ article.post-card {
     padding-bottom: 5ch;
     cursor: pointer;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+            -ms-user-select: none;
+        user-select: none;
     background-color: white;
     width: 100%;
 }
@@ -1821,7 +1817,6 @@ article.post-card:hover button.card-button {
     background-color: var(--body-color);
     color: white;
 }
-
 /* Post Card */
 
 .searchStates {
@@ -1913,7 +1908,6 @@ article.post-card:hover button.card-button {
     background: rgba(167, 165, 165, 0.723);
     transform: translateX(-4em);
 }
-
 @media (min-width: 960px) {
     .search-states__browse-homes-btn::before {
         transform: translateX(-3em);
@@ -2008,7 +2002,6 @@ article.post-card:hover button.card-button {
     opacity: 0.7;
 
 }
-
 /* states browser */
 
 .notSellInformation {
@@ -2060,7 +2053,6 @@ article.post-card:hover button.card-button {
     gap: 2em;
     text-align: center;
 }
-
 /* Do not sell Personal */
 
 .separator-2 {
@@ -2096,7 +2088,6 @@ article.post-card:hover button.card-button {
     color: var(--regular-black);
     opacity: 0.7;
 }
-
 /* footerText */
 
 .app-store-google-play-wrapper {
@@ -2136,7 +2127,6 @@ article.post-card:hover button.card-button {
 .svg-icon-2 {
     transform: translate(0.3em, 2.1em);
 }
-
 /* Google play & App Store */
 
 
@@ -2150,7 +2140,7 @@ article.post-card:hover button.card-button {
     color: var(--regular-black)
 }
 
-.footer-social-media-wrapper li {
+.footer-social-media-wrapper  li{
     list-style: none;
 }
 
@@ -2173,7 +2163,7 @@ article.post-card:hover button.card-button {
     font-family: var(--header-font-family);
 }
 
-.getho-r-2 {
+.getho-r-2{
     font-size: 0.5em;
     font-weight: lighter;
     color: var(--body-color);
@@ -2199,11 +2189,12 @@ article.post-card:hover button.card-button {
 
 .equal-housing-icon {
     fill: var(--body-color);
-    width: 34px;
-    height: 34px;
+    width:34px;
+    height:34px;
 }
 
 .footerSvg {
     background-color: white;
     padding-top: 2em;
 }
+

@@ -120,16 +120,31 @@ let content = document.getElementById("content");
 let input = document.getElementById("search-box");
 const overlay1 = document.getElementById('overlay-1');
 
-
-window.onscroll = function () { // function myFunction()
-    if (window.pageYOffset >= content.offsetTop) { // Get the offset position of the scrollbar
-        scrollBar.classList.add("sticky"); // let sticky = scrollBar.offsetTop;// When the user scrolls the page, execute myFunction
-        overlay1.classList.add('active-3'); // having the overlay open with the active //
-    } else {
-        scrollBar.classList.remove("sticky"); // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        overlay1.classList.remove('active-3'); // having the overlay closing with the active //
-    }
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+    myFunction()
 };
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.scrollY > 150) {
+        scrollBar.classList.add("sticky");
+
+    } else {
+        scrollBar.classList.remove("sticky");
+
+    }
+}
+
+// window.onscroll = function () { // function myFunction()
+//     if (window.scrollY >= content.offsetTop) { // Get the offset position of the scrollbar
+//         scrollBar.classList.add("sticky"); // let sticky = scrollBar.offsetTop;// When the user scrolls the page, execute myFunction
+//         overlay1.classList.add('active-3'); // having the overlay open with the active //
+//     } else {
+//         scrollBar.classList.remove("sticky"); // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+//         overlay1.classList.remove('active-3'); // having the overlay closing with the active //
+//     }
+// };
 
 
 // let prevScrollPos = window.pageYOffset;
